@@ -11,13 +11,13 @@ features:
 installation:
 ```bash
 # deno
-deno add @ntut/permit
+deno add @ntuut/permit
 # npm
-npx jsr add @ntut/permit
+npx jsr add @ntuut/permit
 # pnpm
-pnpm dlx jsr add @ntut/permit
+pnpm dlx jsr add @ntuut/permit
 # bun
-bunx jsr add @ntut/permit
+bunx jsr add @ntuut/permit
 ```
 
 ## Usage
