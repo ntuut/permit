@@ -1,12 +1,16 @@
 {
+  "version": "0.0.1",
   "name": "@ntut/permit",
   "module": "index.ts",
   "type": "module",
   "scripts": {
     "dev": "vitest watch",
     "test": "vitest run",
-    "publish": "vitest run && npx jsr publish"
+    "pub": "vitest run && npx jsr publish"
   },
+  "description": "Easy access control tree for your application",
+  "author": "ariomoklo <ariowidiatmoko@gmail.com> (ariomoklo.dev)",
+  "keywords": ["rbac", "access-control", "access-control-list", "access-control-tree"],
   "devDependencies": {
     "@types/bun": "latest",
     "vite": "^5.2.11",
