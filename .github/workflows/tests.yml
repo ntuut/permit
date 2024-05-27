@@ -11,10 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: pnpm
-      - run: pnpm install
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
       - name: Test
-        run: pnpm test
+        run: bun test
