@@ -1,4 +1,4 @@
-# @ntut/permit
+# @ntuut/permit
 
 Easy access control tree for your application.
 

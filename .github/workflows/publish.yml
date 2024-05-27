@@ -1,23 +1,19 @@
-name: Publish the package
-
+name: Publish
 on:
   push:
-    tags:
-      - "v*"
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
-  jsr:
+  publish:
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-build
+
     permissions:
       contents: read
       id-token: write
+
     steps:
       - uses: actions/checkout@v4
-      - run: corepack enable
-      - uses: oven-sh/setup-bun@v1
-      - run: bun install
+
       - name: Publish package
-        run: bun pub
+        run: npx jsr publish
